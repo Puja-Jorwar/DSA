@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build & Run C++ with freopen",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "if (Test-Path '${fileDirname}/main.exe') { Remove-Item '${fileDirname}/main.exe' -Force }; g++ '${file}' -o '${fileDirname}/main.exe'; if ($?) { Start-Process '${fileDirname}/main.exe' -NoNewWindow -Wait }"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}

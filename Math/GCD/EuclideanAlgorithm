@@ -1,0 +1,29 @@
+// Euclidean Algorithm
+
+GCD(n1, n2) == Gcd((n1 - n2), n2) where(n1 > n2)
+
+                   gcd(n1, n2) == gcd(n1 % n2, n2)->till one of them is zero then other is GCD
+
+                                  while (a > 0, b > 0)
+{
+    if (a > b)
+    {
+        a = a % b;
+    }
+    else
+    {
+        b = b % a;
+    }
+    if (a == 0)
+    {
+        cout << b;
+    }
+    else
+    {
+        cout << b;
+    }
+}
+
+TC->O(log of fy(min(a, b)))
+
+here a and b is changing thats why fy.

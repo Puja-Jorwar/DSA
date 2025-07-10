@@ -1,0 +1,14 @@
+1. Division method
+2. Folding method
+3. Mid Square Method
+#################################################
+1. Division method-->>>
+ modulo 10 and put in array on the basis of units place if unit place same then chain it and will apply search algorithm\//\\\
+
+ when everyone went to the same pace collision happens
+ and then worst case o(n) happens very rare 
+ ###########################################
+
+
+ in map any datatype can be a key
+ but in unordered map only integer can be a key
